@@ -7,33 +7,34 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import com.mysql.cj.xdevapi.Client;
 
 import DB.ConnexionBD;
 
 public class fonction {
 
 	public ArrayList<CommandeE> listeCommande;
-	
+
 	public ArrayList<Commande> liste_Commande;
-	
+
 	public ArrayList<CommandeE> getElementCommande(int etat) {
 		listeCommande = new ArrayList<CommandeE>();
 		ConnexionBD cnx = new ConnexionBD();
 		cnx.creerInstruction("SELECT * FROM element_commande WHERE traiter = ?");
-		
+
 		try {
 			cnx.getInstructionPrepare().setInt(1, etat);
-			
+
 			ResultSet rs = cnx.lire();
 			while (rs.next()) {
 				int id = rs.getInt("id");
 				int id_commande = rs.getInt("id_commande");
 				int id_repas = rs.getInt("id_repas");
 				int quantite = rs.getInt("quantite");
-				
+
 				listeCommande.add(new CommandeE(id, "nom-repas", quantite, "date", "heure"));
 			}
-		
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

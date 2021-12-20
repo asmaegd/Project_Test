@@ -13,7 +13,7 @@ public class ConnexionBD {
 	private Statement instruction;
 	protected ResultSet resultat;
 	private PreparedStatement instructionPrepare;
-	
+
 	static {
 		try {
 			// Connection db=DriverManager.getConnection(
@@ -25,11 +25,11 @@ public class ConnexionBD {
 		} catch (SQLException ex) {
 			System.out.println("Erreur de connexion");
 		}
-	
+
 	}
-	
+
 	public static Connection getConnexion() {
-		
+
 		return cnx;
 	}
 
@@ -54,7 +54,7 @@ public class ConnexionBD {
 			fermerInstruction();
 			instructionPrepare = cnx.prepareStatement(requete);
 		} catch (Exception ex) {
-			System.out.println("Erreur lors de la crï¿½ation de l'instruction");
+			System.out.println("Erreur lors de la création de l'instruction");
 			ex.printStackTrace();
 		}
 	}
@@ -83,7 +83,7 @@ public class ConnexionBD {
 		try {
 			cnx.close();
 		} catch (Exception ex) {
-			System.out.println("Erreur lors de la fermeture de la connexion ï¿½ la BD");
+			System.out.println("Erreur lors de la fermeture de la connexion à la BD");
 			ex.printStackTrace();
 		}
 	}
