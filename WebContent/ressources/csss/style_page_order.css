@@ -1,0 +1,235 @@
+body {
+  
+  
+background-color: #f5f5f5;
+
+
+  
+  
+}
+
+.bgcentre{
+	max-width: 1080px;
+    margin: auto;
+	padding: 10px;
+}
+
+.htext01{
+	font-size: 25px;
+	font-weight:bold;
+	font-family: arial;
+	color: #007dc1;
+	text-decoration: none;
+	margin-bottom: 10px;
+	padding: 0px;
+	
+}
+.admin{
+	float: right;
+	position:relative;
+	top: -45px;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding: 10px;
+	text-decoration:none;
+	
+}
+.cp{
+	font-size: 30px;
+	font-weight:bold;
+	font-family: arial;
+	color: white;
+	background-color: #1e1e1e;
+	text-decoration: none;
+	
+	padding: 10px;
+	
+}
+
+.menu{
+	
+	
+	background-color: #3d3d3d;
+	width: 200px;
+	height: 600px;
+	display: inline-block;
+	position: absolute;
+	
+}
+
+.dash{
+	
+	
+	background-color: white;
+	width: 880px;
+	min-height: 600px;
+	position: relative;
+	left: 200px;
+	
+}
+
+.floating-box {
+    display: inline-block;
+    width: 175px;
+    height: 90px;
+    margin: 10px;
+    
+}
+
+.dashtext{
+	font-size: 25px;
+	font-weight:bold;
+	font-family: arial;
+	
+	text-decoration: none;
+	
+	padding: 10px;
+	
+}
+
+.logog {
+	position: relative;
+	 top:300px;
+	 float: right;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    
+}
+
+.dropdown-content a {
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+	
+	font-size: 15px;
+	color: black;
+	font-weight:bold;
+	font-family: arial;
+	
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    
+    float: left;
+    font-size: 18px;
+    
+    height: 500px;
+    overflow: hidden;
+    line-height: 35px;
+}
+
+.navbar ul li {
+    display: block;
+    color: white;
+    
+    text-decoration: none;
+    text-align: left;
+    padding-left: 15px;
+	
+	font-weight:bold;
+	font-family: arial;
+}
+
+.navbar ul li:hover .dropdown-content {
+    display: block;
+	font-size: 15px;
+	color: black;
+	font-weight:bold;
+	font-family: arial;
+	text-decoration: none;
+}
+
+
+.dropbtn, .dropbtn2, .dropbtn3, .dropbtn4, .dropbtn5 {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+	width: 200px;
+	text-align: left;
+	font-weight:bold;
+	font-family: arial;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #dd5046;
+}
+
+ .dropbtn2:hover, .dropbtn2:focus {
+    background-color: #3cbc61;
+}
+
+ .dropbtn3:hover, .dropbtn3:focus {
+    background-color: #f59f46;
+}
+
+ .dropbtn4:hover, .dropbtn4:focus {
+    background-color: #797eda;
+}
+
+ .dropbtn5:hover, .dropbtn5:focus {
+    background-color: #4f90e0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+.valider{
+	position: static;
+ 
+ margin-left: 760px;
+}
+
